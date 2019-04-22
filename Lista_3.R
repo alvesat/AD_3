@@ -2,7 +2,7 @@
 ##LISTA III
 ##ANTÔNIO FERNANDES
 
-##Q.2
+##Questão 2
 
   ##Declarando duas variáveis
 
