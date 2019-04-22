@@ -70,7 +70,4 @@ boxplot(mtcars)
 
 ##Ainda observando o boxplot, é possível identificar outliers nas variáveis hp, wt, qsec e
 ##carb. As variáveis hp e disp também são as que apresentam os maiores valores.
-=======
-
->>>>>>> 2be21a8c6a4590d98d726c5adb1bd5e20cc8cc79
 
