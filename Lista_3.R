@@ -17,6 +17,7 @@ z <- x + y #z é igual a x+y
 
 a <- z*08819478498 #a é igual ao resultado da multiplicação de z pelo cpf
 
+print(a) #apresentar o resultado de a
 
 ##Questão 3
 
@@ -26,7 +27,7 @@ head(mtcars)
 
 str(mtcars) ##identificando os tipos de variáveis da base por meio da função str
 
-<<<<<<< HEAD
+
     ##Dimensões da base mtcars
 
 dim(mtcars) ##identificando as dimensões da base por meio da função dim 
