@@ -18,4 +18,13 @@ z <- x + y #z é igual a x+y
 a <- z*08819478498 #a é igual ao resultado da multiplicação de z pelo cpf
 
 
+##Questão 3
+
+head(mtcars)
+
+    ##Descrição dos tipos de variáveis da base
+
+str(mtcars) ##identificando os tipos de variáveis da base por meio da função str
+
+
 
