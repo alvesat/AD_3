@@ -72,3 +72,19 @@ boxplot(mtcars)
 ##Ainda observando o boxplot, é possível identificar outliers nas variáveis hp, wt, qsec e
 ##carb. As variáveis hp e disp também são as que apresentam os maiores valores.
 
+
+##Questão 4
+
+library(ffbase)  ##abrindo pacote 'ffbase'
+
+setwd("~/Dados/Dados_Encontro/dados_encontro_1_ufpe") ##Definindo diretório onde está a base
+
+Turmas <- read.csv2.ffdf(file = "TURMAS.csv", sep = "|") ##Lendo o banco turmas.csv
+
+Turmas <- as.data.frame(Turmas) ##Transformando 'Turmas' em um data.frame
+
+Turmas_PE <- subset(Turmas, Turmas$CO_UF == '26') ##Selecionando apenas as turmas de Pernambuco
+
+save(Turmas_PE, file = "Turmas_PE.RData") ##Salvando o data.frame "Turmas_PE" como arquivo "RData"
+
+
