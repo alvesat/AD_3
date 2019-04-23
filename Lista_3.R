@@ -87,4 +87,33 @@ Turmas_PE <- subset(Turmas, Turmas$CO_UF == '26') ##Selecionando apenas as turma
 
 save(Turmas_PE, file = "Turmas_PE.RData") ##Salvando o data.frame "Turmas_PE" como arquivo "RData"
 
+##Questão 5
+
+load("Turmas_PE.RData") ##Carregando o banco "Turmas_PE"
+
+mean(Turmas_PE$NU_MATRICULAS) ##Calculando a média do número de matrículas por turma em PE
+
+##Questão 6
+
+Docente_NE <- read.csv2.ffdf(file = "DOCENTES_NORDESTE.csv", sep = "|", first.rows=100000) ##Abrindo banco 'DOCENTES_NORDESTE.csv'
+
+Docentes_PE <- subset.ffdf(Docente_NE, CO_UF == '26') ##Selecionado Docentes de PE
+
+Raca <- as.data.frame(table.ff(Docentes_PE$TP_COR_RACA)) ##Data frame da Tabela de contigência da variável raça dos docentes de PE
+
+length(Docentes_PE$TP_COR_RACA) ##Idenficando tamanho da coluna TP_COR_RACA
+
+Raca$Perc <- (Raca$Freq/412663)*100 ##Calculando a porcentagem de cada item da coluna TP_COR_RACA no Dataframe criado
+
+print(Raca$Perc)
+
+##44% dos docentes de Pernambuco não declararam a sua raça no censo de 2016
+
+sum(Raca$Perc[2:3]) ##Soma da porcentagem da cor preta e parda
+
+##27.35% dos docentes de Pernambuco se auto-declararam como preto ou pardo no censo de 2016
+
+
+
+
 
