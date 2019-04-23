@@ -2,6 +2,8 @@
 ##LISTA III
 ##ANTÔNIO FERNANDES
 
+
+
 ##Questão 2
 
   ##Declarando duas variáveis
@@ -18,6 +20,8 @@ z <- x + y #z é igual a x+y
 a <- z*08819478498 #a é igual ao resultado da multiplicação de z pelo cpf
 
 print(a) #apresentar o resultado de a
+
+
 
 ##Questão 3
 
@@ -48,29 +52,30 @@ print(mtcars$cyl[4]) ##apresentando o quarto elemento presente na variável 'cyl
 
 str(mtcars)
 
-## Por meio desse comando, é possível verificar que o banco 'mtcars' apresenta
-## 32 observações e 11 variáveis. Também é possivel observar que todas as variáveis
-## são númericas. 
+    ## Por meio desse comando, é possível verificar que o banco 'mtcars' apresenta
+    ## 32 observações e 11 variáveis. Também é possivel observar que todas as variáveis
+    ## são númericas. 
 
 names(mtcars) 
 
-##A função names apresenta os nomes das variáveis presentes no banco 'mtcars'.
-##os nomes são: "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear" "carb".
+    ##A função names apresenta os nomes das variáveis presentes no banco 'mtcars'.
+    ##os nomes são: "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear" "carb".
 
 summary(mtcars)
 
-##O comando summary apresente 6 informações estatísticas de cada variável do banco 'mtcars':
-## Valor minimo, 1º quartil, Mediana, Média, 3º quartil e valor máximo. 
+    ##O comando summary apresente 6 informações estatísticas de cada variável do banco 'mtcars':
+    ## Valor minimo, 1º quartil, Mediana, Média, 3º quartil e valor máximo. 
 
 
 boxplot(mtcars)
 
-##o comando boxplot apresenta um diagrama de caixa para cada variável presente no banco
-##'mtcars'. Observa-se que as variáveis 'disp' e 'hp' são as variáveis que apresentam 
-## as maiores variações enquanto que as outras variáveis apresentam pouca variação. 
+    ##o comando boxplot apresenta um diagrama de caixa para cada variável presente no banco
+    ##'mtcars'. Observa-se que as variáveis 'disp' e 'hp' são as variáveis que apresentam 
+    ## as maiores variações enquanto que as outras variáveis apresentam pouca variação. 
 
-##Ainda observando o boxplot, é possível identificar outliers nas variáveis hp, wt, qsec e
-##carb. As variáveis hp e disp também são as que apresentam os maiores valores.
+    ##Ainda observando o boxplot, é possível identificar outliers nas variáveis hp, wt, qsec e
+    ##carb. As variáveis hp e disp também são as que apresentam os maiores valores.
+
 
 
 ##Questão 4
@@ -87,11 +92,15 @@ Turmas_PE <- subset(Turmas, Turmas$CO_UF == '26') ##Selecionando apenas as turma
 
 save(Turmas_PE, file = "Turmas_PE.RData") ##Salvando o data.frame "Turmas_PE" como arquivo "RData"
 
+
+
 ##Questão 5
 
 load("Turmas_PE.RData") ##Carregando o banco "Turmas_PE"
 
 mean(Turmas_PE$NU_MATRICULAS) ##Calculando a média do número de matrículas por turma em PE
+
+
 
 ##Questão 6
 
@@ -107,11 +116,11 @@ Raca$Perc <- (Raca$Freq/412663)*100 ##Calculando a porcentagem de cada item da c
 
 print(Raca$Perc)
 
-##44% dos docentes de Pernambuco não declararam a sua raça no censo de 2016
+    ##44% dos docentes de Pernambuco não declararam a sua raça no censo de 2016
 
 sum(Raca$Perc[2:3]) ##Soma da porcentagem da cor preta e parda
 
-##27.35% dos docentes de Pernambuco se auto-declararam como preto ou pardo no censo de 2016
+    ##27.35% dos docentes de Pernambuco se auto-declararam como preto ou pardo no censo de 2016
 
 
 
