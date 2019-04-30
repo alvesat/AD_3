@@ -2,7 +2,11 @@
 ##LISTA III
 ##ANTÔNIO FERNANDES
 
+##QUESTÃO 1
 
+##Link Github
+
+# https://github.com/alvesat/AD_3/blob/master/Lista_3.R
 
 ##Questão 2
 
